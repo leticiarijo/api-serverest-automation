@@ -1,0 +1,36 @@
+name: github CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  github-pipelines:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          command: npx cypress run
+          browser: chrome
+          headless: true
+          record: false
+
+      - name: Login
+        run: npx cypress run --spec "cypress/e2e/services/login/tests/postLogin.cy.js"
