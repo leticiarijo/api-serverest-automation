@@ -6,7 +6,7 @@
   "scripts": {
     "test": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/mochawesome-reports,overwrite=false,html=false,json=true'",
     "merge-reports": "mochawesome-merge cypress/mochawesome-reports/*.json --output cypress/mochawesome-reports/reports.json",
-    "generate-report": "marge cypress/mochawesome-reports/reports.json --reportDir cypress/mochawesome-reports --inline --charts true --timestamp false --overwrite true"
+    "generate-report": "marge cypress/mochawesome-reports/reports.json --reportDir cypress/mochawesome-reports --reportFilename mochawesome.html --inline assets --charts true"
   },
   "repository": {
     "type": "git",
