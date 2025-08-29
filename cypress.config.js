@@ -5,6 +5,13 @@ import fs from 'fs';
 module.exports = defineConfig({
   e2e: {
     baseUrl: "https://serverest.dev/",
+    reporter: "mochawesome",
+    reporterOptions: {
+    reportDir: "cypress/mochawesome-reports",
+    overwrite: false,
+    html: false,
+    json: true
+  } ,
     setupNodeEvents(on, config) {
       on('task', {
         deleteFile(path) {
