@@ -1,6 +1,6 @@
 import * as PostLogin from '../requests/postLogins.request';
 
-describe('Post Login', () => {
+describe('POST: Validar login', () => {
  
     it('Deve fazer o login e retonar sucesso 200', () => {
         

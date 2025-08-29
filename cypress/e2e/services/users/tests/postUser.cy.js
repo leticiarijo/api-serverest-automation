@@ -1,7 +1,7 @@
 import { gerarUsuarioDinamico, criarUsuario } from '../requests/postUser.request.js';
 
   
-describe('Post User', () => {
+describe('POST: Criar usuário', () => {
     beforeEach(() => {
 
         cy.login();

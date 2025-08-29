@@ -2,7 +2,7 @@ import { putUser } from '../requests/putUser.request.js';
 import { gerarUsuarioDinamico, criarUsuario } from '../requests/postUser.request.js';
 import payloadLogin200 from '../../login/payloads/login200.payload.json';
 
-describe('Put User', () => {
+describe('PUT: Atualizar usuario', () => {
     beforeEach(() => {
 
         cy.login();
