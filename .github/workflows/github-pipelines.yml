@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cypress-html-report
-          path: cypress/mochawesome-reports/mochawesome.html.html
+          path: cypress/mochawesome-reports/mochawesome.html
