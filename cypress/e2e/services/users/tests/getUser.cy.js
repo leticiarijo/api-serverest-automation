@@ -1,7 +1,7 @@
 import userSchema from '../contracts/user.contract';
 import * as getUser from '../requests/getUser.request';
 
-describe('Get User', () => {
+describe('GET: Buscar usuário', () => {
     beforeEach(() => {
 
         cy.login();

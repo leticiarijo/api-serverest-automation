@@ -2,7 +2,7 @@ import * as getUserID from '../requests/getUserID.request';
 import {   gerarUsuarioDinamico, criarUsuario } from '../requests/postUser.request.js';
 
 
-describe('Get User ID', () => {
+describe('GET(ID): Buscar usuário por ID', () => {
     beforeEach(() => {
         
         cy.login(); 

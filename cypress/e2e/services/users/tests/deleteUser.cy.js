@@ -1,7 +1,7 @@
 import { deleteUser } from '../requests/deleteUser.request.js';
 import { gerarUsuarioDinamico, criarUsuario } from '../requests/postUser.request.js';
 
-describe('Delete User', () => {
+describe('DELETE: Deletar usuário', () => {
     beforeEach(() => {
 
         cy.login();
