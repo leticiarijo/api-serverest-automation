@@ -6,8 +6,8 @@ Cypress.Commands.add('login', () => {
     url: '/login',
     headers: { accept: 'application/json' },
     body: payloadLogin200,
-  }).then((res) => {
-    expect(res.status).to.eq(200);
-    Cypress.env('authToken', res.body.authorization); // salva token globalmente
+    }).then((res) => {
+      expect(res.status).to.eq(200);
+      Cypress.env('authToken', res.body.authorization);
   });
 });
