@@ -37,3 +37,6 @@ jobs:
 
       - name: Post User
         run: npx cypress run --spec "cypress/e2e/services/users/tests/postUser.cy.js"
+
+      - name: Get User
+        run: npx cypress run --spec "cypress/e2e/services/users/tests/getUser.cy.js"
