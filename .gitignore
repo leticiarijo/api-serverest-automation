@@ -2,4 +2,4 @@ cypress/screenshots/
 cypress/videos/
 node_modules/
 fixtures/
-cypress/results/
+mochawesome-reports/

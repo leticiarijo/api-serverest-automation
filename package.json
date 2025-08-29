@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/results,overwrite=false,html=false,json=true'",
-    "merge-reports": "mochawesome-merge cypress/results/*.json --output cypress/results/output.json",
-    "generate-report": "marge cypress/results/output.json --reportDir cypress/results --inline assets --charts true"
+    "test": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/mochawesome-reports,overwrite=false,html=false,json=true'",
+    "merge-reports": "mochawesome-merge cypress/mochawesome-reports/*.json --output cypress/mochawesome-reports/reports.json",
+    "generate-report": "marge cypress/mochawesome-reports/reports.json --reportDir cypress/mochawesome-reports --inline --charts true --timestamp false --overwrite true"
   },
   "repository": {
     "type": "git",
