@@ -54,23 +54,27 @@ npm install
 ## 🏗️ Estrutura do Projeto
 
 api-serverest-automation/
-├── cypress/                  
-│   ├── e2e/               
-│      ├── services/ 
-│           ├── login      
-│               ├── payloads 
-│               ├── requests
-│               ├── tests
-│           ├── users
-│               ├── contracts
-│               ├── payloads 
-│               ├── requests
-│               ├── tests
-├── support/
+├── .github/                     # Contém os workflows do GitHub Actions
+│   └── workflows/
+│       └── ci.yml
+├── cypress/
+│   ├── e2e/                     # Contém todos os arquivos de teste (specs)
+│   │   └── services/
+│   │       ├── login/
+│   │       │   ├── payloads/    # Módulos para gerar corpos de requisição
+│   │       │   ├── requests/    # Módulos com as chamadas HTTP
+│   │       │   └── tests/       # Arquivos de teste do endpoint de login
+│   │       └── users/
+│   │           ├── contracts/   # Módulos com os schemas Joi para validação
+│   │           ├── payloads/
+│   │           ├── requests/
+│   │           └── tests/       # Arquivos de teste do endpoint de usuários
+│   └── support/                 # Comandos customizados e configurações globais
+├── mochawesome-report/          # Pasta onde os relatórios HTML são gerados
 ├── .gitignore
-├── cypress.config.js
+├── cypress.config.js            # Arquivo de configuração principal do Cypress
 ├── package-lock.json
-├── package.json           
+├── package.json
 └── README.md
 
 ## ⚡ Execução dos Testes
