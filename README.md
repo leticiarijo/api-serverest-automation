@@ -40,6 +40,7 @@ Configuração do ambiente Node.js.
 - **[Node.js](https://nodejs.org/en/download/prebuilt-installer)** - (Versão 20 ou superior)
 
 
+
 ## ⚙️ Configuração do Ambiente
 
 1. Clone o repositório:
@@ -51,32 +52,6 @@ git clone [https://github.com/leticiarijo/api-serverest-automation.git](https://
 npm install
 ```
 
-## 🏗️ Estrutura do Projeto
-O projeto está organizado da seguinte forma para manter a clareza e a manutenibilidade:
-
-api-serverest-automation/
-|-- .github/                     # Contém os workflows do GitHub Actions
-|   `-- workflows/
-|       `-- github-pipelines.yml
-|-- cypress/
-|   |-- e2e/                     # Contém todos os arquivos de teste (specs)
-|   |   `-- services/
-|   |       |-- login/
-|   |       |   |-- payloads/    # Módulos para gerar corpos de requisição
-|   |       |   |-- requests/    # Módulos com as chamadas HTTP
-|   |       |   `-- tests/       # Arquivos de teste do endpoint de login
-|   |       `-- users/
-|   |           |-- contracts/   # Módulos com os schemas Joi para validação
-|   |           |-- payloads/
-|   |           |-- requests/
-|   |           `-- tests/       # Arquivos de teste do endpoint de usuários
-|   `-- support/                 # Comandos customizados e configurações globais
-|-- mochawesome-report/          # Pasta onde os relatórios HTML são gerados
-|-- .gitignore
-|-- cypress.config.js            # Arquivo de configuração principal do Cypress
-|-- package-lock.json
-|-- package.json
-`-- README.md
 
 ## ⚡ Execução dos Testes
 
